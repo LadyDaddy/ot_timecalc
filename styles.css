@@ -1,11 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Avenir Medium", "Helvetica Neue";
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url(https://raw.githubusercontent.com/LadyDaddy/ot_timecalc/b21973ee07caaae3a8df61704ac2b204e3a9e162/Screenshot%202024-08-31%20at%207.54.43%E2%80%AFPM.png?token=AQYMRLIPZHCMZD7NCENMNELG2PRJE);
 }
 
 .container {
@@ -17,6 +18,11 @@ body {
 
 h1, h2 {
     text-align: center;
+    font-family: "Avenir Medium", "Helvetica Neue";
+    font-style: normal;
+    font-weight: bolder;
+    font-size: x-large;
+    text-decoration: underline;
 }
 
 form {
@@ -26,6 +32,8 @@ form {
 
 label {
     margin-top: 10px;
+    font-family: "Avenir Medium", "Helvetica Neue";
+    text-align: left;
 }
 
 input {
@@ -36,17 +44,36 @@ input {
 }
 
 button {
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    background-color: #28a745;
-    color: #fff;
-    font-size: 16px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    /* [disabled]border-bottom-left-radius: 4px; */
+    /* [disabled]border-bottom-right-radius: 4px; */
+    /* [disabled]border-top-right-radius: 4px; */
+    /* [disabled]border-top-left-radius: 4px; */
+    border: thin solid;
+    background-color: #FBA8FA;
+    color: #000000;
+    font-size: 20px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    width: 50%;
+    display: block;
+    /* [disabled]bottom: 0%; */
+    right: 50px;
+    left: 50px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #FF48FC;
 }
 
 #result {
