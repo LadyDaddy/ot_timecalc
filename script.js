@@ -27,3 +27,11 @@ function calculatePay() {
     document.getElementById("doubleTimePay").innerText = `Double Time Pay (2x): $${doubleTimePay.toFixed(2)}`;
     document.getElementById("totalPay").innerText = `Total Pay: $${totalPay.toFixed(2)}`;
 }
+
+function resetForm() {
+    // Clear the result section
+    document.getElementById("regularPay").innerText = '';
+    document.getElementById("overtimePay").innerText = '';
+    document.getElementById("doubleTimePay").innerText = '';
+    document.getElementById("totalPay").innerText = '';
+}
