@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Overtime Pay Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CA Overtime Pay Calculator</h1>
+        <form id="payForm">
+            <label for="hourlyRate">Hourly Rate ($):</label>
+            <input type="number" id="hourlyRate" name="hourlyRate" step="0.01" required>
+            
+            <label for="hoursWorked">Total Hours Worked:</label>
+            <input type="number" id="hoursWorked" name="hoursWorked" step="0.1" required>
+            
+            <button type="button" onclick="calculatePay()">Calculate</button>
+        </form>
+        
+        <div id="result">
+            <h2>Pay Breakdown</h2>
+            <p id="regularPay"></p>
+            <p id="overtimePay"></p>
+            <p id="doubleTimePay"></p>
+            <p id="totalPay"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
